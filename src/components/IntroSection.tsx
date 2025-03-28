@@ -1,8 +1,15 @@
-import {Button, Flex, Grid, GridItem, Icon, Image, Text, Link, Stack} from "@chakra-ui/react";
-import {FaGithub, FaLinkedin} from "react-icons/fa";
+import {Button, Flex, Grid, GridItem, Icon, Image, Text, Stack} from "@chakra-ui/react";
 import {GoArrowDownRight} from "react-icons/go";
+import {Icons} from "@/components/Icons.tsx";
 
-export const IntroSection = () => {
+export const IntroSection = ({contactRef}: { contactRef: React.RefObject<HTMLDivElement> }) => {
+
+  const handleScroll = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({behavior: "smooth"});
+    }
+  };
+
   return (
     <Grid templateColumns={{base: "1fr", md: "repeat(2, 1fr)"}} gap={10} mx={6} alignItems="center"
           py={{base: 0, md: 10}} pb={{base: 16}}>
@@ -36,18 +43,9 @@ export const IntroSection = () => {
         <Flex direction={{base: "row", sm: "row"}} align="center"
               justify={{base: "center", md: "space-between"}} gap={4}
         >
-          <Flex maxW='max-content' gap={2} justify="space-evenly">
-            <Link href="https://github.com/nikitrajkovski" target="_blank"
-                  rel="noopener noreferrer">
-              <Icon as={FaGithub} boxSize={8} color="black" _hover={{color: "#333"}}/>
-            </Link>
-            <Link href="https://www.linkedin.com/in/nikitrajkovski/" target="_blank"
-                  rel="noopener noreferrer">
-              <Icon as={FaLinkedin} boxSize={8} color="black" _hover={{color: "#0077B5"}}/>
-            </Link>
-          </Flex>
+          <Icons/>
 
-          <Button bg="#D68C45" color="white" _hover={{
+          <Button bg="#D68C45" color="white" onClick={handleScroll} _hover={{
             bg: "#c97e3a",
             transform: "scale(1.05)",
             transition: "transform 0.2s ease-in-out"
