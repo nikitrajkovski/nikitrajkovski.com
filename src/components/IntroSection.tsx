@@ -12,7 +12,7 @@ export const IntroSection = ({contactRef}: { contactRef: React.RefObject<HTMLDiv
 
   return (
     <Grid templateColumns={{base: "1fr", md: "repeat(2, 1fr)"}} gap={10} mx={6} alignItems="center"
-          py={{base: 0, md: 10}} pb={{base: 16}}>
+          py={{base: 0, md: 10}} pb={{base: 16}} maxW="6xl">
       <GridItem>
         <Flex maxW="7xl" py={8} direction="column" gap={8}>
           <Stack gap={2}>
@@ -34,14 +34,14 @@ export const IntroSection = ({contactRef}: { contactRef: React.RefObject<HTMLDiv
             </Flex>
           </Stack>
 
-          <Text color="black" fontSize={{base: "md", md: "lg"}} textAlign={{md: "left"}}>
+          <Text color="black" fontSize={{base: "md", md: "lg"}} textAlign={{md: "left"}} mr={4}>
             Final year student at the Faculty of Computer Science and Engineering
             with solid experience in software development. My passion is building
             innovative solutions that help people reach their full potential.
           </Text>
         </Flex>
         <Flex direction={{base: "row", sm: "row"}} align="center"
-              justify={{base: "center", md: "space-between"}} gap={4}
+              justify={{base: "center", md: "space-between"}} gap={4} flexWrap="wrap"
         >
           <Icons/>
 
@@ -49,7 +49,7 @@ export const IntroSection = ({contactRef}: { contactRef: React.RefObject<HTMLDiv
             bg: "#c97e3a",
             transform: "scale(1.05)",
             transition: "transform 0.2s ease-in-out"
-          }} size={{base: "md", md: "lg"}} px={6} transition="all 0.2s ease-in-out">
+          }} size={{base: "md", md: "lg"}} px={{base: 3, md: 6}} transition="all 0.2s ease-in-out">
             <Icon background="transparent" as={GoArrowDownRight}/>
             <Text background="transparent" fontSize={{base: "lg", md: "xl"}} fontWeight="medium">Let's
               work together</Text>
@@ -59,7 +59,7 @@ export const IntroSection = ({contactRef}: { contactRef: React.RefObject<HTMLDiv
 
       <GridItem>
         <Flex align="center" justify={{base: "center", md: "flex-end"}}>
-          <Image maxW={{base: "300px", md: "max-content"}}
+          <Image maxW="100%"
                  src="https://media.giphy.com/media/xoicctrOv5aGw6mCZi/giphy.gif?cid=ecf05e47rcu9wr3z5j1f9druhrt2d352iv0luc6sx9vn4v3i&ep=v1_gifs_search&rid=giphy.gif&ct=g"
           />
         </Flex>

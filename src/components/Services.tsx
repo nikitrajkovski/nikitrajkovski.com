@@ -13,7 +13,7 @@ export const Services = () => {
           business. Let’s build something great.
         </Text>
       </Flex>
-      <Grid templateColumns={{base: "1fr", md: "repeat(2, 1fr)"}} my={10} gap={4}>
+      <Grid templateColumns={{base: "1fr", md: "repeat(2, 1fr)"}} my={10}>
         <GridItem mx={6}>
           <Flex maxW="7xl" py={8} direction="column" gap={16}>
             <Flex direction="column" gap={4}>
