@@ -34,7 +34,7 @@ export const IntroSection = ({contactRef}: { contactRef: React.RefObject<HTMLDiv
             </Flex>
           </Stack>
 
-          <Text color="black" fontSize={{base: "md", md: "lg"}} textAlign={{md: "left"}} mr={4}>
+          <Text fontSize={{base: "md", md: "lg"}} textAlign={{md: "left"}} mr={4}>
             Final year student at the Faculty of Computer Science and Engineering
             with solid experience in software development. My passion is building
             innovative solutions that help people reach their full potential.

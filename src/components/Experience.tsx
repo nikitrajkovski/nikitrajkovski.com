@@ -15,7 +15,7 @@ export const Experience = () => {
             <Text color="#040066" fontSize={{base: "lg", md: "xl"}}>G+D Netcetera</Text>
           </Flex>
           <Flex maxW={{md: "60%"}} textAlign={{base: "justify"}}>
-            <Text color="black" lineHeight={1.75}>Developed and maintained React (TypeScript)
+            <Text lineHeight={1.75}>Developed and maintained React (TypeScript)
               frontends and Java
               Spring Boot backends, designing RESTful APIs with Swagger/OpenAPI. Optimized
               performance and scalability using PostgreSQL. Collaborated in an Agile team with
@@ -31,7 +31,7 @@ export const Experience = () => {
                     fontWeight="semibold">Vimak</Text>
             </Flex>
             <Flex>
-              <Text color="black" lineHeight={1.75}>A winery discovery app for
+              <Text lineHeight={1.75}>A winery discovery app for
                 Macedonia, as a university project using React.js for the frontend and Spring Boot
                 for
                 the backend, with MongoDB for data storage. The app integrates Google Maps with
@@ -54,7 +54,7 @@ export const Experience = () => {
                     fontWeight="semibold">Obozhavam Knigi</Text>
             </Flex>
             <Flex>
-              <Text color="black" lineHeight={1.75}>A scalable online bookstore I
+              <Text lineHeight={1.75}>A scalable online bookstore I
                 developed as a university project using ASP.NET Core and PostgreSQL, following Onion
                 Architecture for clean separation of concerns. The platform features dynamic book,
                 author, and publisher management, a seamless shopping cart and order system, and an
@@ -78,7 +78,7 @@ export const Experience = () => {
                     fontWeight="semibold">Vip Auto</Text>
             </Flex>
             <Flex>
-              <Text color="black" lineHeight={1.75}>A car marketplace application for a client,
+              <Text lineHeight={1.75}>A car marketplace application for a client,
                 using
                 React.js for the frontend and Spring Boot with PostgreSQL for the backend. The app
                 features an advanced filtering system, enabling users to search cars by price,

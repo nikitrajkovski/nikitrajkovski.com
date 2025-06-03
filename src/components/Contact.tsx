@@ -10,13 +10,13 @@ export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
       <SectionHeaderComponent header={"Contact"} text={"Let's work together"}/>
       <Flex direction={{base: "column", md: "row"}} mt={6} mx={4} gap={6} justify="space-evenly"
             align="center">
-        <Text color="black" fontSize="lg" textAlign="center">
+        <Text fontSize="lg" textAlign="center">
           Get in touch with me by email or connect with me on social media.
         </Text>
         <Flex direction="row" fontSize={{base: "2xl", md: "3xl"}} justify="center" align="center"
               gap={2}>
           <Link href="mailto:ntrajkovski5@gmail.com">
-            <Icon as={FaMailBulk} boxSize={{base:10, md:8}} color="black" _hover={{color: "#D36135"}}/>
+            <Icon as={FaMailBulk} boxSize={{base:10, md:8}} _hover={{color: "#D36135"}}/>
           </Link>
           <Icons/>
         </Flex>

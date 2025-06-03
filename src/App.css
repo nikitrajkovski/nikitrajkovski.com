@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-* {
-    background: #FEFEE3;
-    /*color: #fcf7f8;*/
-}
+/** {*/
+/*    background: #FEFEE3;*/
+/*}*/
 
-::selection {
-    background: #ECE4B7;
-}
+/*::selection {*/
+/*    background: #ECE4B7;*/
+/*}*/
