@@ -3,7 +3,7 @@ import {SectionHeaderComponent} from "@/components/SectionHeaderComponent.tsx";
 
 export const Experience = () => {
   return (
-    <Box maxW="7xl" py={10} pb={{base:5, md:10}}>
+    <Box maxW="7xl" py={10} pb={{base: 5, md: 10}}>
       <SectionHeaderComponent header={"Experience"} text={"Work activities and projects"}/>
       <Flex direction="column" mt={{base: 10, md: 20}} mx={4} gap={20}>
         <Flex direction={{base: "column", md: "row"}} gap={{base: 5, md: 16}} mx={6}
@@ -39,6 +39,27 @@ export const Experience = () => {
                 user authentication and a shopping cart for wine purchases. The backend was deployed
                 on Heroku and the frontend on Vercel, ensuring a reliable and seamless
                 experience.</Text>
+            </Flex>
+          </Flex>
+          <Flex maxW={{md: "40%"}} textAlign={{base: "justify"}}>
+
+          </Flex>
+        </Flex>
+        <Flex direction={{base: "column", md: "row"}} gap={{base: 6, md: 16}} mx={6}
+              justify="start">
+          <Flex direction="column" maxW={{md: "60%"}} gap={5}>
+            <Flex direction="column">
+              <Text color="gray">Jul 2024</Text>
+              <Text color="#2C7E49" fontSize={{base: "2xl", md: "3xl"}}
+                    fontWeight="semibold">Meetups</Text>
+            </Flex>
+            <Flex>
+              <Text lineHeight={1.75}>Meetups Application is a platform for discovering and sharing world locations,
+                build with Next.js and MongoDB. The app is fully dockerized, ensuring consistent deployment across
+                environments, and leverages GitHub Actions to automate linting, Docker image builds, and image pushes
+                for a smooth CI/CD workflow. For scalability and reliability, the project uses Kubernetes, with
+                manifests for deployment, service, and ingress to handle container orchestration, load balancing, and
+                seamless application accessibility in a cluster.</Text>
             </Flex>
           </Flex>
           <Flex maxW={{md: "40%"}} textAlign={{base: "justify"}}>
